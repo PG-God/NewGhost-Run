@@ -1,14 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class test_1 : MonoBehaviour
 {
-    void Start()
-    {
-        //aiueo
-    }
+    [SerializeField] GameObject StartButton;
 
-    void Update()
+    public void CloseButtonfun()
     {
-        //aiueo
+        StartButton.SetActive(false);
     }
 }

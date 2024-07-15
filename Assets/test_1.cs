@@ -9,6 +9,6 @@ public class test_1 : MonoBehaviour
 
     void Update()
     {
-        
+        //aiueo
     }
 }

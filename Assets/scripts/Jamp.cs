@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Jamp : MonoBehaviour
@@ -13,11 +11,11 @@ public class Jamp : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            transform.Translate(-25, 0, 0); //左に「25」動かす
+            transform.Translate(-25, 0, 0);
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            transform.Translate(25, 0, 0); //右に「25」動かす
+            transform.Translate(25, 0, 0);
         }
     }
 }

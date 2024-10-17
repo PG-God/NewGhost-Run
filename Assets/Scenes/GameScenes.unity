@@ -598,7 +598,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -368, y: -551}
+  m_AnchoredPosition: {x: -368, y: -536}
   m_SizeDelta: {x: 834, y: 369}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940908604
@@ -710,7 +710,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.003372, y: -27.114548}
+  m_Offset: {x: 0, y: -32.936157}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -721,7 +721,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 384.15463, y: 272.14584}
+  m_Size: {x: 384, y: 265.06616}
   m_EdgeRadius: 0
 --- !u!1 &1050840188
 GameObject:
@@ -1701,8 +1701,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278, y: -1053}
-  m_SizeDelta: {x: 2000, y: 500}
+  m_AnchoredPosition: {x: 4400, y: -1000}
+  m_SizeDelta: {x: 10000, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1909340101
 BoxCollider2D:
@@ -1747,7 +1747,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10000, y: 500}
   m_EdgeRadius: 0
 --- !u!114 &1909340102
 MonoBehaviour:

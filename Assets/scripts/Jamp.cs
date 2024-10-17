@@ -1,21 +1,23 @@
+using System.Collections;
+using System.Collections.Generic
 using UnityEngine;
 
 public class Jamp : MonoBehaviour
 {
+    public Rigidbody2D rigit2D;
+    float jumpForce = 680.0f; 
+    
     void Start()
     {
-        Application.targetFrameRate = 60;
+       rigit2D = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    public void JampFunction()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            transform.Translate(-25, 0, 0);
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            transform.Translate(25, 0, 0);
-        }
+        rigit2D.AddForce(transform.up * jumpForce);
     }
+
+
+
+
 }

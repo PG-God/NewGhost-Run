@@ -1,11 +1,11 @@
 using System.Collections;
-using System.Collections.Generic
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Jamp : MonoBehaviour
 {
     public Rigidbody2D rigit2D;
-    float jumpForce = 680.0f; 
+    public float jumpForce = 680.0f; 
     
     void Start()
     {
@@ -15,6 +15,7 @@ public class Jamp : MonoBehaviour
     public void JampFunction()
     {
         rigit2D.AddForce(transform.up * jumpForce);
+        Debug.Log("a");
     }
 
 

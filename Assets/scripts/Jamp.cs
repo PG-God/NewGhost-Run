@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Jamp : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+        Application.targetFrameRate = 60;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.Translate(-25, 0, 0); //左に「25」動かす
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.Translate(25, 0, 0); //右に「25」動かす
+        }
     }
 }

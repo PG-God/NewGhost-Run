@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Jamp : MonoBehaviour
 {
     public Rigidbody2D rigit2D;
-    public float jumpForce = 680.0f; 
+    public float jumpForce = 680.0f;
+    public bool isGrounded = false;
     
     void Start()
     {
@@ -14,11 +13,18 @@ public class Jamp : MonoBehaviour
 
     public void JampFunction()
     {
-        rigit2D.AddForce(transform.up * jumpForce);
-        Debug.Log("a");
+        if (isGrounded)
+        {
+            rigit2D.AddForce(transform.up * jumpForce);
+            isGrounded = false;
+        }
     }
-
-
-
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
 
 }

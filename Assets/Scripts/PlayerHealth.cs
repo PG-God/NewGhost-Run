@@ -11,12 +11,9 @@ public class PlayerHealth : MonoBehaviour
     public GameObject heart2;
     public GameObject heart3;
 
-    public Text gameOverText;
-
     void Start()
     {
         currentHealth = maxHealth;
-        gameOverText.gameObject.SetActive(false);
         UpdateHeartsUI();
     }
 

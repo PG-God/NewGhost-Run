@@ -15,7 +15,11 @@ public class DistanceTracker : MonoBehaviour
 
     void Update()
     {
+        // 距離を時間で計算
         distanceTravelled += speed * Time.deltaTime;
         distanceText.text = distanceTravelled.ToString("F1") + " m";
+
+        // 現在の距離をGameManagerに保存
+        GameManager.distanceTravelled = distanceTravelled;
     }
 }

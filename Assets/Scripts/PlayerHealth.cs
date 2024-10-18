@@ -36,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
 
     void GameOver()
     {
+        // ゲームオーバー時にResultScenesへ
         SceneManager.LoadScene("ResultScenes");
     }
 
@@ -44,6 +45,13 @@ public class PlayerHealth : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             TakeDamage(1);
+        }
+
+        // もしコインを取得したら（仮にコインに "Coin" タグがついているとする）
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            GameManager.coinsCollected++;  // コインの数を加算
+            Destroy(other.gameObject);  // コインを削除
         }
     }
 }

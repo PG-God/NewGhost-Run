@@ -13,7 +13,7 @@ public class CoinManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("coin"))
+        if (other.CompareTag("Coin"))
         {
             score++;
             UpdateCoinText();

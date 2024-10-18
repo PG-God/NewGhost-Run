@@ -1,17 +1,17 @@
 using UnityEngine;
 
-public class Jamp : MonoBehaviour
+public class Jump : MonoBehaviour
 {
     public Rigidbody2D rigit2D;
     public float jumpForce = 680.0f;
-    public bool isGrounded = false;
+    private bool isGrounded = false;
     
     void Start()
     {
        rigit2D = GetComponent<Rigidbody2D>();
     }
 
-    public void JampFunction()
+    public void JumpFunction()
     {
         if (isGrounded)
         {

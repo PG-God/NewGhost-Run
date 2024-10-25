@@ -13,7 +13,8 @@ public class ResultManager : MonoBehaviour
         ResultDistance.text = GameManager.distanceTravelled.ToString("F1") + " m";
 
         // Display coins collected
-        ResultCoins.text = GameManager.coinsCollected + " コイン";
+        ResultCoins.text = GameManager.coinsCollected + " こいん";
+        //試しがき
 
         // Calculate points based on distance and coins
         int points = (int)(GameManager.distanceTravelled * 10 + GameManager.coinsCollected * 1000); // Cast to int

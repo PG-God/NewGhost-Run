@@ -1171,8 +1171,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0341c1dde5d7f4d39b3433cc46bfb256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceText: {fileID: 1866100694}
-  coinsText: {fileID: 711199807}
+  ResultDistance: {fileID: 954928148}
+  ResultCoins: {fileID: 843114745}
+  ResultPoint: {fileID: 1204284195}
 --- !u!4 &1763170987
 Transform:
   m_ObjectHideFlags: 0
